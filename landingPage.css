@@ -1,0 +1,201 @@
+body{
+    margin:10px;
+    font-family: cursive;
+    background-color: rgba(226, 226, 226, 0.5);
+}
+
+#wrapper{
+    margin:auto;
+}
+
+#header{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: rgba(226, 226, 226, 0.5);
+    justify-content: space-between;
+}
+
+#logo img{
+    width: 100%;
+}
+
+#nav-bar, #linkLink{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+}
+
+#nav-bar li{
+    margin-right: 30px;
+}
+
+#nav-bar a, #linkLink a{
+    text-decoration: none;
+    color:#73B81B;
+}
+
+#nav-bar a:hover, #linkLink a:hover{
+    font-weight: 900;
+    color:black;
+}
+
+.email{
+    width: 50%;
+    margin:auto;
+    padding-top:140px;
+    text-align: center;
+    color: #468C02;
+}
+
+#form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.email input{
+    margin:5px auto;
+    width: 200px;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+input[type=submit]{
+    background-color: #73B81B;
+    border-radius: 0;
+}
+
+.email input[type=submit]:hover{
+   border: 1px solid #73B81B;
+   background-color: rgba(226, 226, 226, 0.5);
+   cursor: pointer;
+}
+
+
+.products button{
+    margin:10px auto;
+    width: 120px;
+    height: 40px;
+    border: none;
+    color:white;
+    background: #73B81B;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.products button:hover{
+color:black;
+border: 1px solid #73B81B;
+background-color: rgba(226, 226, 226, 0.5);
+font-weight: 900;
+}
+
+#products{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color:#468C02;
+}
+
+.products{
+    margin:20px;
+    padding:20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #AAFF2F;
+    width: 300px;
+}
+
+#video{
+   display: flex;
+   justify-content: center;
+}
+
+#video h3{
+    color:#73B81B;
+    text-align: center;
+}
+
+#video2{
+    width:600px;
+    height:400px;
+}
+
+.products img{
+    width: 250px;
+    height: 200px;
+    margin:auto;
+}
+
+#video{
+   margin:auto;
+}
+
+#delivery{
+   margin:auto;
+   width: 90%;
+   display: flex;
+   justify-content: space-around;
+   margin-top:20px;
+   color: #468C02;
+   flex-wrap: wrap;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    margin:20px;
+}
+
+#contact span{
+    padding: 10px 0;
+}
+#logistic1, #logistic2{
+    text-align: left;
+    max-width: 400px; 
+    margin:10px;
+}
+
+#logistic1 img, #logistic2 img{
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+footer{
+    text-align: right;
+    margin:auto;
+    width: 90%;
+}
+
+#linkFooter{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#linkLink li{
+    margin-right: 20px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+  #nav-bar, #linkLink{
+   flex-direction: column;
+  }
+
+  #video2{
+    width:300px;
+    height:200px;
+}
+}
